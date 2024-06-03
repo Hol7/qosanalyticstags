@@ -17,7 +17,7 @@ function App() {
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
-    trackEvent('Form', 'Submit', `Name: ${name}, Message: ${message}`);
+    trackEvent('Form', 'Soumission formulaire', `Name: ${name}, Message: ${message}`);
     alert('Form submitted');
   };
 
