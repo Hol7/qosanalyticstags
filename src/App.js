@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="App">
       <div className="left-section">
-        <form onSubmit={handleFormSubmit}>
+        <form id="vercel_submit" onSubmit={handleFormSubmit}>
           <div>
             <label>Name:</label>
             <input
