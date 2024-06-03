@@ -1,11 +1,19 @@
 // src/App.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { trackEvent } from './analytics';
+import ReactGA from 'react-ga';
 import './App.css';
+
+const TRACKING_ID = 'G-GSEQC2HFTC'; // Replace with your actual tracking ID
 
 function App() {
   const [name, setName] = useState('');
   const [message, setMessage] = useState('');
+
+  useEffect(() => {
+    ReactGA.initialize(TRACKING_ID);
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
