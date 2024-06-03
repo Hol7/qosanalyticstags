@@ -4,7 +4,7 @@ import { trackEvent } from './analytics';
 import ReactGA from 'react-ga';
 import './App.css';
 
-const TRACKING_ID = 'G-GSEQC2HFTC'; // Replace with your actual tracking ID
+const TRACKING_ID = 'G-6CH0RQPCR9'; // Replace with your actual tracking ID
 
 function App() {
   const [name, setName] = useState('');
