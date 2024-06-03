@@ -22,7 +22,7 @@ function App() {
   };
 
   const handleButtonClick = () => {
-    trackEvent('Button', 'Click', 'Click Me button clicked');
+    trackEvent('Button', 'Boutton à droite', 'Boutton à droite clicked');
     alert('Button clicked');
   };
 
